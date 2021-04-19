@@ -1,0 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "../abstracts/index";
+
+.margin {
+  &-y {
+    &--xl {
+      margin-top: calculateRem(40);
+      margin-bottom: calculateRem(40);
+    }
+  }
+
+  &-t {
+    &--xs {
+      margin-top: calculateRem(10);
+    }
+  }
+}
+
+.is-error {
+  color: $clr-error-200;
+}
+
+.is-primary {
+  color: $clr-primary-300;
+}
+
+.is-cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}

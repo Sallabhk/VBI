@@ -1,0 +1,68 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin pageBackground {
+  background: $clr-neutral-100;
+  padding: calculateRem(25) calculateRem(26);
+  border-radius: calculateRem(8);
+}
+
+@mixin fontSize($size) {
+  font-size: #{$size}px; // fall back px value
+  font-size: calculateRem($size);
+}
+
+// MEDIA QUERY MANAGER
+
+/*
+  $breakpoint arguement choices:
+
+    Mobile:     up to 768px [TOUCH] -> 768px = 48em
+    Tablet:     from 769px  [TOUCH] -> 769px = 48.0625em
+    Desktop:    from 1024px -> 1024px = 64em
+    Widescreen: from 1216px -> 1216px = 76em
+    FullHD:     from 1408px -> 1408px = 88em
+    
+  [1024 - 1800] is where our normal styles apply
+  ## ? add a 1800+ option for big desktops?
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48.0625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == touch-device {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+
+  // Normal styles apply
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 64.0625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == widescreen {
+    @media only screen and (min-width: 76em) {
+      @content;
+    }
+  }
+  @if $breakpoint == fullhd {
+    @media only screen and (min-width: 88em) {
+      @content;
+    }
+  }
+}

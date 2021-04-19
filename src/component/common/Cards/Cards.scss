@@ -1,0 +1,28 @@
+.card{
+    transition: transform 1s;
+    color: #000;
+    background-color: #fff;
+    font-family: cursive;
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+    &__title {
+        width: 100;
+        padding: 20px;
+        margin: 20px;
+        box-shadow:  inset 0 0 10px #fff;
+        display: flex;
+        }
+    &__delete{
+        margin-left: 100rem;
+    }
+    img {
+        height: 10rem;
+    }
+    &__heading {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+}

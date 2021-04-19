@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap");
+
+// icon
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// --- Font-Family (ff)
+$ff-primary: "Roboto", sans-serif;
+$ff-secondary: "Poppins", sans-serif;
+
+// COLORS (clr)
+// Universal
+
+$clr-amber-100: #ffb91d;
+
+// Custom
+$clr-primary-100: #5d8afa;
+$clr-primary-300: #0c45d1;
+$clr-primary-400: #002583;
+$clr-primary-500: #0c45d121;
+$clr-primary-600: #243AF0;
+
+$clr-secondary-100: #02298b;
+$clr-secondary-300: #0c1d48;
+
+$clr-neutral-100: #ffffff;
+$clr-neutral-200: #f4f5f7;
+$clr-neutral-300: #e1e1e1;
+$clr-neutral-400: #a4a4a4;
+$clr-neutral-500: #676767;
+$clr-neutral-600: #424857;
+$clr-neutral-700: #212121;
+$clr-neutral-800: #797979;
+
+$clr-success-100: #3dcc24;
+$clr-success-200: #179001;
+$clr-success-300: #106601;
+$clr-success-400: #16A22A;
+$clr-success-500: #06A22A;
+
+$clr-error-100: #ce4762;
+$clr-error-200: #c32d38;
+$clr-error-300: #9c1720;
+
+$clr-warning-100: #f0cb5f;
+$clr-warning-200: #ffbf00;
+$clr-warning-300: #c4a000;
+
+$clr-info-100: #92cffb;
+$clr-info-200: #349ce7;
+$clr-info-300: #0772bf;
+
+$clr-text: $clr-neutral-600;
+$clr-text-inverted: $clr-neutral-100;
+$clr-background: #e9ebf2;
+$clr-background-100: #F0EFEF;
+
+$clr-border: #e2e2e2;
+$clr-border-100: #BEBEBE;
+
+$clr-seperator: #eff4ff;
+$clr-divider: #9eb1de;
+$clr-shadow: #CED9F477;
+
+$clr-badge-background: #f0f5ff;
+$clr-modal-background: rgba(0, 0, 0, 0.3);
+$clr-thead-background: #f7f7f7;
+// LAYOUT
+$grid-width: 1280px;

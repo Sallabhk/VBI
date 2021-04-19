@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { HomePage } from './component/pages/HomePage/HomePage';
+import "./App.css"
+import { AllSongs } from './component/pages/AllSongs/AllSongs';
+import { AlbumSong } from './component/pages/AlbumSongs/AlbumSong';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="heading">VBI Songs App</div>
+        <Router>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/songs" exact component={AllSongs} />
+          <Route path="/songs/:id" exact component={AlbumSong} />
+        </Switch>
+        </Router>
     </div>
+    
   );
 }
 

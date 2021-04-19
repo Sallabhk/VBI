@@ -1,0 +1,50 @@
+@import "../../../common-scss/main.scss";
+
+$border-size: calculateRem(2);
+
+.tabs {
+  @include fontSize(16);
+
+  &__list {
+    border-bottom: 1px solid $clr-neutral-300;
+  }
+
+  &__pane {
+    display: inline-block;
+    padding: calculateRem(8) calculateRem(16);
+
+    cursor: pointer;
+    border-bottom: $border-size solid transparent;
+    color: $clr-neutral-400;
+
+    transition: all 0.2s;
+
+    &:hover {
+      color: $clr-text;
+      border-bottom: $border-size solid $clr-text;
+    }
+
+    &--active {
+      color: $clr-primary-300;
+      border-bottom: $border-size solid $clr-primary-300;
+
+      &:hover {
+        color: $clr-primary-300;
+        border-bottom: $border-size solid $clr-primary-300;
+      }
+    }
+
+    &--disabled {
+      color: $clr-neutral-300;
+      cursor: not-allowed;
+
+      &:hover {
+        color: $clr-neutral-300;
+        border-bottom: $border-size solid transparent;
+      }
+    }
+  }
+
+  &__content {
+  }
+}

@@ -1,0 +1,25 @@
+.songs {
+    height: 300;
+    overflow: "auto";
+    &__playlist{
+        margin-top: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    }
+    &__create{
+        display: block;
+    background: cornflowerblue;
+    height: 40px;
+    padding: 2px 2px 2px 2px;
+    }
+}
+.search-box {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 50rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
