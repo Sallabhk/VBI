@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/VBI/static/css/main.2800d5f0.chunk.css",
+    "main.js": "/VBI/static/js/main.207ecdf2.chunk.js",
+    "main.js.map": "/VBI/static/js/main.207ecdf2.chunk.js.map",
+    "runtime-main.js": "/VBI/static/js/runtime-main.ecb8c387.js",
+    "runtime-main.js.map": "/VBI/static/js/runtime-main.ecb8c387.js.map",
+    "static/js/2.8de11058.chunk.js": "/VBI/static/js/2.8de11058.chunk.js",
+    "static/js/2.8de11058.chunk.js.map": "/VBI/static/js/2.8de11058.chunk.js.map",
+    "static/js/3.728ac37b.chunk.js": "/VBI/static/js/3.728ac37b.chunk.js",
+    "static/js/3.728ac37b.chunk.js.map": "/VBI/static/js/3.728ac37b.chunk.js.map",
+    "index.html": "/VBI/index.html",
+    "static/css/main.2800d5f0.chunk.css.map": "/VBI/static/css/main.2800d5f0.chunk.css.map",
+    "static/js/2.8de11058.chunk.js.LICENSE.txt": "/VBI/static/js/2.8de11058.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecb8c387.js",
+    "static/js/2.8de11058.chunk.js",
+    "static/css/main.2800d5f0.chunk.css",
+    "static/js/main.207ecdf2.chunk.js"
+  ]
+}
