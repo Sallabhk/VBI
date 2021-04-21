@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { albumEndPoint } from '../../../api-facade/endpoints';
-import { getData } from '../../../api-facade/http';
 import { BEMHelper } from '../../../utils/bem-helper';
-import { Card } from '../../common/Cards/Cards';
-import { useHistory } from "react-router-dom";
 import "./AllSongs.scss"
-import { SearchBox } from '../../common/Search/Search';
-import { Button } from 'antd';
-import Modal from 'antd/lib/modal/Modal';
 import PlaylistForm from '../../common/PlayListForm/PlayListForm';
 import { parseCookies, setCookie } from 'nookies';
 import PlaylistCard from '../../common/PlayListCard/PlayListCard';
@@ -56,47 +49,6 @@ function handleSubmit(name) {
     );
   }
 }
-
-//  const fetchData = async() => {
-//         const albumData = await getData(albumEndPoint)
-//         setAlbum(albumData)
-//         return albumData
-//       }
-
-//  useEffect(() => {
-//      if(!loaded){
-//          setLoaded(true)
-//         fetchData()
-//      }
-// });
-
-
-//  const onSearchChange = event => {
-//     setInput(event.target.value)
-// };
-// const filteredData = album.filter(song =>
-//     song.title.toLowerCase().includes(input.toLowerCase())
-//   );
-
-//   const handleChange = event => {
-//       setPlayList(event.target.value)
-//   }
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setPlayListValue([...playListValue,{title: playList}])
-// }
-// const handleClick = () => {
-//   setVisible(true)
-// }
-
-// useEffect(() => {  
-//     localStorage.setItem('playList',JSON.stringify(playListValue))
-//     setData(() => localStorage.getItem('playList'))
-//   });
-
-// useEffect(() => {
-//     setData(() => localStorage.getItem('playList'))
-// },[])
  
 function removePlaylist(name) {
     const newPlaylist = { ...playlists };
